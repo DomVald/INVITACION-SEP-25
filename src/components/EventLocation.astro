@@ -1,0 +1,83 @@
+---
+// EventLocation.astro
+// Sección de ubicación y horarios de la boda
+// Mobile first, minimalista y elegante
+---
+
+<section
+  class="w-full flex flex-col items-center justify-center py-16 px-6 bg-olive text-beige relative text-center"
+>
+  <h2 class="text-3xl sm:text-4xl font-serif mb-12">Detalles del Evento</h2>
+
+  <!-- Ubicación del evento -->
+  <div class="flex flex-col items-center mb-12">
+    <!-- Ícono de salón -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-12 h-12 text-terra mb-4"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M3 7l9-4 9 4-9 4-9-4z"></path>
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M21 10v10H3V10l9 4 9-4z"></path>
+    </svg>
+    <h3 class="text-2xl font-serif text-beige">Salón Terracota</h3>
+    <p class="mt-2 text-lg">Recepción: 17:00 hrs</p>
+    <button
+      class="px-6 py-2 my-8 bg-terracota text-beige rounded-full shadow-md hover:opacity-90 transition"
+      onclick="window.open('https://goo.gl/maps/example', '_blank')"
+    >
+      Ver en Google Maps
+    </button>
+  </div>
+
+  <!-- Discurso de boda -->
+  <div class="flex flex-col items-center mb-14">
+    <!-- Ícono de orador -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-12 h-12 text-terra mb-4"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M9 20l-5.447-2.724A2 2 0 013 15.382V5a2 2 0 012-2h14a2 2 0 012 2v10.382a2 2 0 01-1.553 1.894L15 20m-6 0v-8h6v8"
+      ></path>
+    </svg>
+    <h3 class="text-2xl font-serif text-beige">Discurso de boda</h3>
+    <p class="mt-2 text-lg">Inicia a las 18:00 hrs</p>
+  </div>
+
+  <!-- Máscara inferior reutilizable para transición -->
+  <svg
+    class="absolute bottom-0 left-0 w-full"
+    viewBox="0 0 1440 150"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M0,0 C360,100 1080,0 1440,100 L1440,150 L0,150 Z" fill="#FFFCF5"
+    ></path>
+  </svg>
+</section>
+
+<style lang="postcss">
+/* Colores personalizados para Tailwind */
+.text-beige { color: #F4E1D2; }
+.text-terra { color: #ff6334; }      /* Terracota */
+.text-terracota { color: #E17055; }  /* Naranja terracota */
+.bg-olive { background-color: #556B2F; } /* Verde olivo */
+.bg-terracota { background-color: #D35400; }
+.font-serif { font-family: 'Times New Roman', serif; }
+</style>

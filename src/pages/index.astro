@@ -1,0 +1,71 @@
+---
+import MainPhoto from "../components/MainPhoto.astro";
+import Names from "../components/Names.astro";
+import Countdown from "../components/Countdown.astro";
+import Contador from "../components/contador";
+import SecondaryPhoto from "../components/SecondaryPhoto.astro";
+import Parents from "../components/Parents.astro";
+import EventLocation from "../components/EventLocation.astro";
+import GiftTable from "../components/GiftTable.astro";
+import DressCode from "../components/DressCode.astro";
+import ExtraPhoto from "../components/ExtraPhoto.astro";
+import RsvpForm from "../components/RsvpForm.astro";
+import ThankYouMessage from "../components/ThankYouMessage.astro";
+import FinalPhoto from "../components/FinalPhoto.astro";
+import "../styles/global.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitación de Boda</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#FFFCF5] text-[#FFFCF5] font-custom">
+    <!-- Secciones de la invitación -->
+
+    <!-- 1. Foto principal -->
+    <MainPhoto />
+
+    <!-- 2. Nombres de los novios -->
+    <Names />
+
+    <!-- 3. Contador regresivo -->
+    <Contador targetDate={new Date("2025-10-12T00:00:00")} client:load />
+
+    <!-- 4. Foto secundaria -->
+    <SecondaryPhoto />
+
+    <!-- 5. Padres de los novios -->
+    <Parents />
+
+    <!-- 6. Ubicación y horarios -->
+    <EventLocation />
+
+    <!-- 7. Mesa de regalos -->
+    <GiftTable />
+
+    <!-- 8. Código de vestimenta -->
+    <DressCode />
+
+    <!-- 9. Foto adicional de los novios -->
+    <ExtraPhoto />
+
+    <!-- 10. Confirmación de asistencia -->
+    <RsvpForm phone="521234567890" />
+    <!-- Reemplaza con el número de WhatsApp deseado -->
+
+    <!-- 11. Mensaje final de agradecimiento -->
+    <ThankYouMessage />
+
+    <!-- 12. Foto final de los novios -->
+    <FinalPhoto />
+  </body>
+</html>

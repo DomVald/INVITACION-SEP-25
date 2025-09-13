@@ -1,0 +1,36 @@
+---
+// CoupleNames.astro
+// Sección minimalista centrada mostrando los nombres de los novios
+// Mobile first, elegante y consistente con la paleta de boda
+---
+
+<section
+  class="w-full flex flex-col items-center justify-center py-16 bg-beige font-custom px-6 relative"
+>
+  <!-- Nombre de la novia -->
+  <h2 class="text-6xl sm:text-5xl text-terra">Nidia</h2>
+
+  <!-- Símbolo & -->
+  <span class="my-4 text-5xl sm:text-6xl text-olive">&</span>
+
+  <!-- Nombre del novio -->
+  <h2 class="text-6xl sm:text-5xl text-terra pb-8">Jose</h2>
+
+  <!-- Opcional: máscara inferior reutilizable para transición -->
+  <svg
+    class="absolute bottom-0 left-0 w-full"
+    viewBox="0 0 1440 150"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M0,0 C360,100 1080,0 1440,100 L1440,150 L0,150 Z" fill="#556B2F"
+    ></path>
+  </svg>
+</section>
+
+<style lang="postcss">
+/* Colores personalizados para Tailwind */
+.text-terra { color: #D35400; }       /* Terracota */
+.text-terracota { color: #E17055; }   /* Naranja terracota */
+.text-olive { color: #556B2F; }      /* Verde olivo */
+.bg-beige { background-color: #FFFCF5; } /* Beige de fondo */
+</style>

@@ -1,0 +1,51 @@
+---
+// SecondaryPhoto.astro
+// Sección con foto secundaria de los novios
+// Mobile first, minimalista y elegante
+---
+
+<section class="relative w-full">
+  <!-- Imagen secundaria de los novios -->
+  <div class="w-full overflow-hidden">
+    <img
+      src="/images/img2.jpg"
+      alt="Novios secundaria"
+      class="w-full h-auto object-cover"
+    />
+  </div>
+
+  <!-- Máscara inferior estilo papel rasgado -->
+  <svg
+    class="absolute bottom-0 left-0 w-full"
+    viewBox="0 0 1440 150"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M0,0 C360,100 1080,0 1440,100 L1440,150 L0,150 Z" fill="#FFFCF5"
+    ></path>
+  </svg>
+  <svg
+    class="absolute top-0 left-0 w-full"
+    viewBox="0 0 1440 150"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M0,0 L1440,0 L1440,100 C1080,0 360,100 0,0 Z" fill="#556B2F"
+    ></path>
+  </svg>
+
+  <!-- Contenido opcional sobre la imagen -->
+  <!-- <div
+    class="absolute inset-0 flex flex-col items-center justify-center px-6 text-center"
+  >
+    <h2 class="text-3xl sm:text-4xl font-serif text-terra">Nuestro Amor</h2>
+    <p class="mt-2 text-lg sm:text-xl text-olive">
+      Cada momento juntos es único
+    </p>
+  </div> -->
+</section>
+
+<style lang="postcss">
+/* Colores personalizados para Tailwind */
+.text-terra { color: #D35400; }       /* Terracota */
+.text-olive { color: #556B2F; }      /* Verde olivo */
+.bg-beige { background-color: #FFFCF5; } /* Beige */
+</style>

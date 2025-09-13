@@ -1,0 +1,84 @@
+---
+import GiftIcon from "./gift-icon.astro";
+---
+
+<section
+  class="w-full flex flex-col items-center justify-center py-16 px-6 bg-beige relative text-center"
+>
+  <h2 class="text-3xl sm:text-4xl font-serif text-terra mb-8">
+    Mesa de Regalos
+  </h2>
+  <GiftIcon />
+  <!-- Mensaje breve -->
+  <p class="text-lg sm:text-xl text-olive max-w-md mb-8 mt-8">
+    Su presencia en este día tan especial es el mejor regalo que podemos
+    recibir. Pero si desean obsequiarnos algo, aquí están nuestras opciones:
+  </p>
+
+  <!-- Botón a la mesa de regalos -->
+  <a
+    href="https://www.ejemplo.com/mesa-de-regalos"
+    target="_blank"
+    class="px-6 py-3 bg-terracota text-white rounded-full shadow-md hover:opacity-90 font-bold transition"
+  >
+    Ver Mesa de Regalos
+  </a>
+
+  <!-- Datos bancarios -->
+  <div class="mt-12 flex flex-col gap-6 w-full max-w-md mb-14">
+    <div
+      class="flex items-center justify-between bg-white rounded-lg px-4 py-3 shadow-md"
+    >
+      <span class="text-sm sm:text-base text-olive font-medium"
+        >Banco: BBVA</span
+      >
+    </div>
+    <div
+      class="flex items-center justify-between bg-white rounded-lg px-4 py-3 shadow-md"
+    >
+      <span class="text-sm sm:text-base text-olive font-medium"
+        >Cuenta: 1234 5678 9012</span
+      >
+      <button
+        class="text-terra text-sm font-bold hover:opacity-80"
+        onclick="navigator.clipboard.writeText('123456789012')"
+      >
+        Copiar
+      </button>
+    </div>
+    <div
+      class="flex items-center justify-between bg-white rounded-lg px-4 py-3 shadow-md"
+    >
+      <span class="text-sm sm:text-base text-olive font-medium"
+        >CLABE: 002345678901234567</span
+      >
+      <button
+        class="text-terra text-sm font-bold hover:opacity-80"
+        onclick="navigator.clipboard.writeText('002345678901234567')"
+      >
+        Copiar
+      </button>
+    </div>
+  </div>
+
+  <!-- Máscara inferior reutilizable para transición -->
+  <svg
+    class="absolute bottom-0 left-0 w-full"
+    viewBox="0 0 1440 150"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M0,0 C360,100 1080,0 1440,100 L1440,150 L0,150 Z" fill="#556B2F"
+    ></path>
+  </svg>
+</section>
+
+<style lang="postcss">
+/* Colores personalizados para Tailwind */
+.text-terra { color: #D35400; }       /* Terracota */
+.text-terracota { color: #E17055; }   /* Naranja terracota */
+.text-olive { color: #556B2F; }       /* Verde olivo */
+.text-beige { color: #F4E1D2; }       /* Beige */
+.bg-beige { background-color: #FFFCF5; }
+.bg-terracota { background-color: #D35400; }
+.font-serif { font-family: 'Times New Roman', serif; }
+</style>
