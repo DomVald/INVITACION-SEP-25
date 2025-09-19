@@ -3,7 +3,7 @@ import Suit from "./suit-icon.astro";
 ---
 
 <section
-  class="w-full flex flex-col items-center text-center justify-center relative bg-olive py-12 px-6"
+  class="w-full flex flex-col items-center text-center justify-center relative bgx-secondary py-12 px-6"
 >
   <h2 class="text-3xl sm:text-4xl font-serif mb-8">Código de Vestimenta</h2>
   <Suit />
@@ -14,9 +14,21 @@ import Suit from "./suit-icon.astro";
 
   <!-- Círculos de colores prohibidos -->
   <div class="flex gap-6 my-14">
-    <div class="w-12 h-12 rounded-full bg-white" title="Blanco"></div>
-    <div class="w-12 h-12 rounded-full bg-terracota" title="Negro"></div>
-    <div class="w-12 h-12 rounded-full bg-olivo" title="Gris claro"></div>
+    <div
+      class="w-12 h-12 rounded-full bgx-primary border border-white"
+      title="Blanco"
+    >
+    </div>
+    <div
+      class="w-12 h-12 rounded-full bgx-secondary border border-white"
+      title="Negro"
+    >
+    </div>
+    <div
+      class="w-12 h-12 rounded-full bgx-complementary border border-white"
+      title="Gris claro"
+    >
+    </div>
   </div>
 
   <p class="text-white text-2xl mb-12">

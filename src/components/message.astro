@@ -1,0 +1,37 @@
+---
+// EventLocation.astro
+// Sección de ubicación y horarios de la boda
+// Mobile first, minimalista y elegante
+---
+
+<section
+  class="w-full flex flex-col items-center justify-center py-16 px-6 bgx-secondary text-white relative text-center"
+>
+  <p class="text-3xl sm:text-4xl mb-12">
+    Nos conocimos de la manera más inesperada. <br /> Conoces a cientos de personas
+    y ninguna te deja huella, y de repente conoces a una persona y te cambia la vida...
+    <br />
+    nos hemos enamorado día tras día, ahora es el momento de darnos el sí más importante...
+  </p>
+
+  <!-- Máscara inferior reutilizable para transición -->
+  <svg
+    class="absolute -bottom-1 left-0 w-full"
+    viewBox="0 0 1440 150"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0,0 C360,100 1080,0 1440,100 L1440,150 L0,150 Z"
+      class="svg-primary"></path>
+  </svg>
+</section>
+
+<style lang="postcss">
+/* Colores personalizados para Tailwind */
+.txt-primary { color: #F4E1D2; }
+.text-terra { color: #ff6334; }      /* Terracota */
+.text-terracota { color: #E17055; }  /* Naranja terracota */
+.bg-olive { background-color: #556B2F; } /* Verde olivo */
+.bg-terracota { background-color: #D35400; }
+.font-serif { font-family: 'Times New Roman', serif; }
+</style>

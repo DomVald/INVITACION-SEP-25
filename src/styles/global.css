@@ -6,3 +6,41 @@
 .font-custom {
   font-family: 'Carattere', cursive;
 }
+
+.bgx-primary {
+  background-color: #FFFCF5; /* Beige claro */
+}
+.bgx-secondary {
+  background-color: #e0b445 ; /* dorado */
+}
+.bgx-complementary {
+  background-color: #A52C2C; /* rojo vino */
+}
+
+.txt-primary {
+  color: #FFFCF5; /* Beige claro */
+}
+.txt-secondary {
+  color: #d5a837; /* dorado */
+}
+.txt-complementary {
+  color: #A52C2C; /* rojo vino */
+}
+.svg-primary {
+  fill: #FFFCF5; /* Beige claro */
+}
+.svg-secondary {
+  fill: #e0b445; /* dorado */
+}
+.svg-complementary {
+  fill: #A52C2C; /* rojo vino */
+}
+.stroke-primary {
+  stroke: #FFFCF5; /* Beige claro */
+}
+.stroke-secondary {
+  stroke: #d5a837; /* dorado */
+}
+.stroke-complementary {
+  stroke: #A52C2C; /* rojo vino */
+}

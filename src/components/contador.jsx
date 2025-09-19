@@ -31,9 +31,12 @@ export default function Contador({ targetDate }) {
   }, []);
 
   return (
-    <section className="w-full flex flex-col items-center justify-center py-16 px-6 bg-[#556B2F] text-white">
+    <section className="w-full flex flex-col items-center justify-center py-16 px-6 bgx-secondary text-white">
       <h2 className="text-3xl sm:text-4xl font-serif mb-6 text-center">
-        Faltan para nuestra boda
+        Fecha: <br /> 1 de Diciembre de 2025
+      </h2>
+      <h2 className="text-3xl sm:text-4xl font-serif mb-6 text-center">
+        Solamente faltan:
       </h2>
 
       <div className="flex flex-row gap-4 sm:gap-8 text-center pb-10">

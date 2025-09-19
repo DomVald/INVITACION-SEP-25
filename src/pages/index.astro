@@ -12,6 +12,8 @@ import ExtraPhoto from "../components/ExtraPhoto.astro";
 import RsvpForm from "../components/RsvpForm.astro";
 import ThankYouMessage from "../components/ThankYouMessage.astro";
 import FinalPhoto from "../components/FinalPhoto.astro";
+import Message from "../components/message.astro";
+import Message2 from "../components/message2.astro";
 import "../styles/global.css";
 ---
 
@@ -37,8 +39,12 @@ import "../styles/global.css";
     <!-- 2. Nombres de los novios -->
     <Names />
 
+    <!-- mensaje de los novios -->
+    <Message />
+    <Message2 />
+
     <!-- 3. Contador regresivo -->
-    <Contador targetDate={new Date("2025-10-12T00:00:00")} client:load />
+    <Contador targetDate={new Date("2025-12-01T00:00:00")} client:load />
 
     <!-- 4. Foto secundaria -->
     <SecondaryPhoto />
