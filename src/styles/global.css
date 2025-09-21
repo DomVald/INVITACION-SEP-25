@@ -3,8 +3,28 @@
 @tailwind components;
 @tailwind utilities;
 
+    @keyframes appear {
+      from {
+        opacity: 0;
+        scale: 0.2;
+      }
+      to {
+        opacity: 1;
+        scale: 1;
+      }
+    }
+
+    .block {
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 50%;
+    }
+
 .font-custom {
-  font-family: 'Carattere', cursive;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .bgx-primary {

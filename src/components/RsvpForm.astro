@@ -5,7 +5,7 @@
 <section
   class="w-full bgx-primary py-10 flex flex-col items-center text-center relative"
 >
-  <h2 class="text-2xl font-serif txt-complementary mb-6">
+  <h2 class="text-2xl font-serif block txt-complementary mb-6">
     Confirmar asistencia
   </h2>
 
@@ -14,9 +14,9 @@
     class="w-3/4 max-w-md flex flex-col space-y-4 txt-secondary font-serif"
   >
     <!-- Campo adultos -->
-    <div class="flex flex-col">
+    <div class="flex flex-col block">
       <label for="adults" class="mb-1 text-lg font-medium"
-        >Número de adultos *</label
+        >Número de invitados *</label
       >
       <input
         id="adults"
@@ -29,25 +29,10 @@
       />
     </div>
 
-    <!-- Campo niños -->
-    <div class="flex flex-col">
-      <label for="children" class="mb-1 text-lg font-medium"
-        >Número de niños</label
-      >
-      <input
-        id="children"
-        name="children"
-        type="number"
-        min="0"
-        class="border border-[#a0522d] rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#a0522d]"
-        placeholder="Ejemplo: 1"
-      />
-    </div>
-
     <!-- Botón confirmar -->
     <button
       type="submit"
-      class="bgx-complementary text-white font-medium font-serif py-3 px-6 rounded-full shadow-md hover:bg-[#8b3e1e] transition mt-4 mb-18"
+      class="bgx-complementary block text-white font-medium py-3 px-6 rounded-full shadow-md hover:bg-[#8b3e1e] transition mt-4 mb-18"
     >
       Confirmar asistencia
     </button>

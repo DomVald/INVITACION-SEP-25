@@ -5,21 +5,22 @@ import GiftIcon from "./gift-icon.astro";
 <section
   class="w-full flex flex-col items-center justify-center py-16 px-6 bgx-primary relative text-center"
 >
-  <h2 class="text-3xl sm:text-4xl font-serif txt-complementary mb-8">
+  <h2 class="text-3xl sm:text-4xl font-serif txt-complementary block mb-8">
     Mesa de Regalos
   </h2>
   <GiftIcon />
   <!-- Mensaje breve -->
-  <p class="text-3xl sm:text-2xl txt-secondary max-w-md mb-8 mt-8">
-    Su presencia en este día tan especial es el mejor regalo que podemos
-    recibir. Pero si desean obsequiarnos algo, aquí están nuestras opciones:
+  <p class="text-3xl sm:text-2xl txt-secondary max-w-md mb-8 mt-8 block">
+    Recuerda: lo importante es que vengas con ilusión, alegría y ganas de
+    pasarla bien. Pero si quieres hacernos un regalo ,que mejor que ayudarnos
+    con nuestra luna de miel
   </p>
 
   <!-- Botón a la mesa de regalos -->
   <a
     href="https://www.ejemplo.com/mesa-de-regalos"
     target="_blank"
-    class="px-6 py-3 bgx-complementary text-white font-serif rounded-full shadow-md hover:opacity-90 font-bold transition"
+    class="px-6 py-3 block bgx-complementary text-white font-serif rounded-full shadow-md hover:opacity-90 font-bold transition"
   >
     Ver Mesa de Regalos
   </a>
@@ -29,18 +30,18 @@ import GiftIcon from "./gift-icon.astro";
     <div
       class="flex items-center justify-between bg-white rounded-lg px-4 py-3 shadow-md"
     >
-      <span class="text-sm sm:text-base txt-complementary font-medium"
+      <span class="text-sm block sm:text-base txt-complementary font-medium"
         >Banco: BBVA</span
       >
     </div>
     <div
       class="flex items-center justify-between bg-white rounded-lg px-4 py-3 shadow-md"
     >
-      <span class="text-sm sm:text-base txt-complementary font-medium"
+      <span class="text-sm sm:text-base block txt-complementary font-medium"
         >Cuenta: 1234 5678 9012</span
       >
       <button
-        class="txt-complementary text-sm font-bold hover:opacity-80"
+        class="txt-complementary block text-sm font-bold hover:opacity-80"
         onclick="navigator.clipboard.writeText('123456789012')"
       >
         Copiar
@@ -49,11 +50,11 @@ import GiftIcon from "./gift-icon.astro";
     <div
       class="flex items-center justify-between bg-white rounded-lg px-4 py-3 shadow-md"
     >
-      <span class="text-sm sm:text-base txt-complementary font-medium"
+      <span class="text-sm sm:text-base block txt-complementary font-medium"
         >CLABE: 002345678901234567</span
       >
       <button
-        class="txt-complementary text-sm font-bold hover:opacity-80"
+        class="txt-complementary text-sm block font-bold hover:opacity-80"
         onclick="navigator.clipboard.writeText('002345678901234567')"
       >
         Copiar
