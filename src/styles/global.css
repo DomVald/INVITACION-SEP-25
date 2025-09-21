@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply overflow-x-hidden w-full;
+  }
+
     @keyframes appear {
       from {
         opacity: 0;

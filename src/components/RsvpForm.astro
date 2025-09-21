@@ -56,10 +56,8 @@
       e.preventDefault();
 
       const adults = document.getElementById("adults").value;
-      const children = document.getElementById("children").value || 0;
-
-      const phone = "521234567890"; // Reemplaza con el número de WhatsApp
-      const message = `Hola, confirmo mi asistencia a la boda:\n- Adultos: ${adults}\n- Niños: ${children}`;
+      const phone = "2291916297"; // Reemplaza con el número de WhatsApp
+      const message = `Hola, confirmo mi asistencia a la boda: Somos ${adults} invitados.`;
 
       const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
       window.location.href = url;
