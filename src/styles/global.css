@@ -4,25 +4,40 @@
 @tailwind utilities;
 
 body {
-    @apply overflow-x-hidden w-full;
+  @apply overflow-x-hidden w-full;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.2;
   }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
 
-    @keyframes appear {
-      from {
-        opacity: 0;
-        scale: 0.2;
-      }
-      to {
-        opacity: 1;
-        scale: 1;
-      }
-    }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
-    .block {
-      animation: appear linear;
-      animation-timeline: view();
-      animation-range: entry 0% cover 50%;
-    }
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
 
 .font-custom {
   font-family: "Cormorant Garamond", serif;
@@ -32,39 +47,44 @@ body {
 }
 
 .bgx-primary {
-  background-color: #FFFCF5; /* Beige claro */
+  background-color: #fffcf5; /* Beige claro */
 }
 .bgx-secondary {
-  background-color: #e0b445 ; /* dorado */
+  background-color: #c48d00; /* dorado */
 }
 .bgx-complementary {
-  background-color: #A52C2C; /* rojo vino */
+  background-color: #a52c2c; /* rojo vino */
 }
-
+.bgx-dark {
+  background-color: #1c1c1c; /* rojo vino */
+}
 .txt-primary {
-  color: #FFFCF5; /* Beige claro */
+  color: #fffcf5; /* Beige claro */
 }
 .txt-secondary {
-  color: #d5a837; /* dorado */
+  color: #eba800; /* dorado */
 }
 .txt-complementary {
-  color: #A52C2C; /* rojo vino */
+  color: #a52c2c; /* rojo vino */
 }
 .svg-primary {
-  fill: #FFFCF5; /* Beige claro */
+  fill: #fffcf5; /* Beige claro */
 }
 .svg-secondary {
-  fill: #e0b445; /* dorado */
+  fill: #c48d00; /* dorado */
 }
 .svg-complementary {
-  fill: #A52C2C; /* rojo vino */
+  fill: #a52c2c; /* rojo vino */
+}
+.svg-dark {
+  fill: #1c1c1c; /* negro */
 }
 .stroke-primary {
-  stroke: #FFFCF5; /* Beige claro */
+  stroke: #fffcf5; /* Beige claro */
 }
 .stroke-secondary {
-  stroke: #d5a837; /* dorado */
+  stroke: #c48d00; /* dorado */
 }
 .stroke-complementary {
-  stroke: #A52C2C; /* rojo vino */
+  stroke: #a52c2c; /* rojo vino */
 }
