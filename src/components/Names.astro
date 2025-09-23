@@ -2,6 +2,7 @@
 // CoupleNames.astro
 // Sección minimalista centrada mostrando los nombres de los novios
 // Mobile first, elegante y consistente con la paleta de boda
+import Audio from "../components/Audio.jsx";
 ---
 
 <section
@@ -21,7 +22,12 @@
     frente al agresor. Y una cuerda triple no se rompe fácilmente."<br />
     Eclesiastés 4:12
   </p>
-
+  <p
+    class="text-2xl block sm:text-3xl txt-complementary text-center mt-8 mb-8 px-4"
+  >
+    Escucha nuestra canción:
+  </p>
+  <Audio client:load />
   <!-- Opcional: máscara inferior reutilizable para transición -->
   <svg
     class="absolute -bottom-1 left-0 w-full"

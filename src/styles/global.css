@@ -7,6 +7,12 @@ body {
   @apply overflow-x-hidden w-full;
 }
 
+@layer utilities {
+  .spin-slow {
+    animation: spin 5s linear infinite;
+  }
+}
+
 @keyframes appear {
   from {
     opacity: 0;

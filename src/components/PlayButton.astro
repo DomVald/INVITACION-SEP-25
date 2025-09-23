@@ -1,0 +1,42 @@
+---
+/* Componente autocontenido */
+---
+
+<button
+  id="btn-audio"
+  class="sticky absolute top-4 right-4 z-100 p-3 rounded-full shadow hover:bg-gray-200 transition"
+  aria-label="Reproducir/Pausar"
+>
+  <!-- Ícono inicial: Play -->
+  <img id="icon-play" src="/play.svg" alt="Play" class="h-6 w-6" />
+
+  <!-- Ícono pausa oculto -->
+  <img id="icon-pause" src="/pause.svg" alt="Pause" class="h-6 w-6 hidden" />
+</button>
+
+<audio id="audio-player" src="/mi-cancion.mp3"></audio>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("btn-audio") as HTMLButtonElement;
+    const audio = document.getElementById("audio-player") as HTMLAudioElement;
+    const iconPlay = document.getElementById("icon-play") as HTMLImageElement;
+    const iconPause = document.getElementById("icon-pause") as HTMLImageElement;
+
+    if (btn && audio && iconPlay && iconPause) {
+      let isPlaying = false;
+
+      btn.addEventListener("click", () => {
+        if (!isPlaying) {
+          audio.play();
+          iconPlay.classList.add("hidden");
+          iconPause.classList.remove("hidden");
+        } else {
+          audio.pause();
+          iconPause.classList.add("hidden");
+          iconPlay.classList.remove("hidden");
+        }
+        isPlaying = !isPlaying;
+      });
+    }
+  });
+</script>
