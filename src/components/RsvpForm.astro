@@ -33,16 +33,12 @@
 </section>
 
 <!-- Script para WhatsApp redirect -->
-<script type="module" defer>
+<script type="module">
   const form = document.getElementById("rsvpForm");
   if (form) {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
-
-      const phone = "2291877765"; // Reemplaza con el número de WhatsApp
-      const message = `Hola!, confirmo mi asistencia a la boda.`;
-
-      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      const url = `https://forms.gle/BdZaCjmn43M3XUec8`;
       window.location.href = url;
     });
   }
