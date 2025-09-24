@@ -19,7 +19,7 @@ export default function AudioButton() {
     <>
       <img
         onClick={toggleAudio}
-        src="/disk.webp"
+        src="/images/disk.webp"
         alt="Reproducir"
         className={`h-36 cursor-pointer transition-transform duration-150 ease-out active:scale-95 ${
           isPlaying ? "spin-slow" : ""

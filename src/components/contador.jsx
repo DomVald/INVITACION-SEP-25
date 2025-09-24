@@ -31,7 +31,7 @@ export default function Contador({ targetDate }) {
   }, []);
 
   return (
-    <section className="w-full flex flex-col items-center justify-center py-16 px-6 bgx-complementary text-white">
+    <section className="w-full relative flex flex-col items-center justify-center py-16 px-6 bgx-complementary text-white">
       <h2 className="text-3xl block sm:text-4xl font-serif mb-6 text-center">
         Solamente faltan:
       </h2>
@@ -50,6 +50,16 @@ export default function Contador({ targetDate }) {
           <span className="text-sm sm:text-base font-serif">Minutos</span>
         </div>
       </div>
+        <img
+    src="images/f-r.webp"
+    alt="flowers"
+    class="absolute block -top-20 z-10 -right-15 w-40 overflow-x-hidden"
+  />
+  <img
+    src="images/f-l.webp"
+    alt="flowers"
+    class="absolute block -bottom-20 z-10 -left-15 w-40 overflow-x-hidden"
+  />
     </section>
   );
 }
