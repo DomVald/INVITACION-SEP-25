@@ -37,12 +37,19 @@ import GiftIcon from "./gift-icon.astro";
     <div
       class="flex items-center justify-between bg-white rounded-lg px-4 py-3 shadow-md"
     >
+      <span class="text-sm block sm:text-base txt-complementary font-medium"
+        >Roberto Velasco Delgado</span
+      >
+    </div>
+    <div
+      class="flex items-center justify-between bg-white rounded-lg px-4 py-3 shadow-md"
+    >
       <span class="text-sm sm:text-base block txt-complementary font-medium"
-        >Cuenta: 1234 5678 9012</span
+        >Cuenta: 157 097 7176</span
       >
       <button
         class="txt-complementary block text-sm font-bold hover:opacity-80"
-        onclick="navigator.clipboard.writeText('123456789012')"
+        onclick="navigator.clipboard.writeText('123456789012').then(() => { this.innerHTML = 'Copiado <span style=&quot;color: green;&quot;>✅</span>'; setTimeout(() => { this.innerHTML = 'Copiar'; }, 2000); }).catch(() => { alert('Error al copiar'); });"
       >
         Copiar
       </button>
@@ -51,11 +58,11 @@ import GiftIcon from "./gift-icon.astro";
       class="flex items-center justify-between bg-white rounded-lg px-4 py-3 shadow-md"
     >
       <span class="text-sm sm:text-base block txt-complementary font-medium"
-        >CLABE: 002345678901234567</span
+        >CLABE: 012 180 01570977176 6</span
       >
       <button
         class="txt-complementary text-sm block font-bold hover:opacity-80"
-        onclick="navigator.clipboard.writeText('002345678901234567')"
+        onclick="navigator.clipboard.writeText('012 180 01570977176 6').then(() => { this.innerHTML = 'Copiado <span style=&quot;color: green;&quot;>✅</span>'; setTimeout(() => { this.innerHTML = 'Copiar'; }, 2000); }).catch(() => { alert('Error al copiar'); });"
       >
         Copiar
       </button>

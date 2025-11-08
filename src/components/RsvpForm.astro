@@ -16,30 +16,23 @@
     <!-- Botón confirmar -->
     <button
       type="submit"
-      class="bgx-complementary block text-white font-medium py-3 px-6 rounded-full shadow-md hover:bg-[#8b3e1e] transition mt-4 mb-18"
+      class="bgx-complementary block text-white font-medium py-3 px-6 rounded-full shadow-md hover:bg-[#8b3e1e] transition mt-4 mb-4"
     >
       Confirmar asistencia
     </button>
+    <button
+      type="button"
+      class="bg-[#25D366] flex items-center justify-center gap-2 text-white font-medium py-3 px-6 rounded-full shadow-md hover:bg-[#128C7E] transition mt-4 mb-18"
+      onclick="window.open('https://wa.me/+522291877765?text=hola,%20confirmo%20mi%20asistencia%20para%20la%20boda', '_blank'); let textSpan = this.querySelector('.button-text'); textSpan.innerHTML = 'Enviando <span style=&quot;color: white;&quot;>✅</span>'; setTimeout(() => { textSpan.innerHTML = 'Escríbenos un mensaje'; }, 2000);"
+    >
+      <img
+        src="/whats logo.svg"
+        alt="WhatsApp"
+        width="20"
+        height="20"
+        class="text-white"
+      />
+      <span class="button-text">Escríbenos un mensaje</span>
+    </button>
   </form>
-  <svg
-    class="absolute -bottom-1 left-0 w-full"
-    viewBox="0 0 1440 150"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M0,0 C360,100 1080,0 1440,100 L1440,150 L0,150 Z"
-      class="svg-complementary"></path>
-  </svg>
 </section>
-
-<!-- Script para WhatsApp redirect -->
-<script type="module">
-  const form = document.getElementById("rsvpForm");
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const url = `https://forms.gle/BdZaCjmn43M3XUec8`;
-      window.location.href = url;
-    });
-  }
-</script>
